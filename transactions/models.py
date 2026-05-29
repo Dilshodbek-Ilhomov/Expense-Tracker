@@ -16,3 +16,8 @@ class Transaction(models.Model):
     category = models.CharField(max_length=100)
     note = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.type} - {self.amount}"
+
+
