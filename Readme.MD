@@ -51,7 +51,6 @@ python manage.py runserver
 ```
 
 ## Future Improvements
-
 * Analytics Dashboard
 * Docker Support
 * PostgreSQL
