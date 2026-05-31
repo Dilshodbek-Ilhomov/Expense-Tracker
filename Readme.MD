@@ -3,7 +3,6 @@
 A personal finance management API built with Django REST Framework.
 
 ## Features
-
 * User Registration
 * JWT Authentication
 * Wallet Management
@@ -13,7 +12,6 @@ A personal finance management API built with Django REST Framework.
 * Protected Endpoints
 
 ## Tech Stack
-
 * Python
 * Django
 * Django REST Framework
