@@ -3,36 +3,46 @@
 A personal finance management API built with Django REST Framework.
 
 ## Features
+
 * User Registration
 * JWT Authentication
 * Wallet Management
 * Income & Expense Tracking
 * Automatic Balance Updates
 * Transaction Validation
+* Basic Analytics
 * Protected Endpoints
 
 ## Tech Stack
+
 * Python
 * Django
 * Django REST Framework
 * Simple JWT
 * SQLite
+* Docker
 
 ## API Endpoints
 
 ### Authentication
 
-* `/api/register/`
-* `/api/token/`
-* `/api/token/refresh/`
+* `POST /api/register/`
+* `POST /api/token/`
+* `POST /api/token/refresh/`
 
 ### Wallets
 
-* `/api/wallets/`
+* `GET /api/wallets/`
+* `POST /api/wallets/`
 
 ### Transactions
 
-* `/api/transactions/`
+* `GET /api/transactions/`
+* `POST /api/transactions/`
+
+### Analytics
+
+* `GET /api/transactions/analytics/`
 
 ## Installation
 
@@ -47,13 +57,6 @@ python manage.py migrate
 
 python manage.py runserver
 ```
-
-## Future Improvements
-* Analytics Dashboard
-* Docker Support
-* PostgreSQL
-* AWS Deployment
-* API Documentation
 
 ## Author
 

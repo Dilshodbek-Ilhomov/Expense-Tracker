@@ -1,7 +1,20 @@
 from django.urls import path
-from .views import TransactionListCreateAPIView
+from analytics_app.views import AnalyticsAPIView
+
+from .views import (
+    TransactionListCreateAPIView,
+)
 
 urlpatterns = [
-    path('', TransactionListCreateAPIView.as_view(), name='transaction-list-create')
-]
+    path(
+        "",
+        TransactionListCreateAPIView.as_view(),
+        name="transactions"
+    ),
 
+    path(
+        "analytics/",
+        AnalyticsAPIView.as_view(),
+        name="analytics"
+    ),
+]
